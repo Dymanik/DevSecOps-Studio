@@ -11,6 +11,11 @@
     - python-pip
     - python-virtualenv
 
+- name: Upgrade pip
+  pip:
+    name: pip
+    state: latest
+
 - name: Install tools via pip
   pip:
     name: "{{ item }}"
